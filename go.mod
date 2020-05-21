@@ -15,7 +15,3 @@ require (
 	github.com/tecbot/gorocksdb v0.0.0-20191217155057-f0fad39f321c // indirect
 	github.com/yanyiwu/gojieba v1.1.2
 )
-
-replace github.com/blevesearch/bleve v1.0.7 => github.com/ttys3/bleve v1.0.8
-
-replace github.com/yanyiwu/gojieba v1.1.2 => github.com/ttys3/gojieba v1.1.3
