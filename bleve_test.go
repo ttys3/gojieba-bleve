@@ -1,4 +1,4 @@
-package bleve
+package jbleve
 
 import (
 	"encoding/json"
