@@ -14,7 +14,7 @@ this repo exists because [the original mod](https://github.com/yanyiwu/gojieba) 
 ## Get the mod
 
 ```bash
-go get github.com/ttys3/gojieba-bleve
+go get github.com/ttys3/gojieba-bleve/v2
 ```
 
 ## Usage
