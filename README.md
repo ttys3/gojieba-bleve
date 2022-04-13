@@ -22,7 +22,7 @@ go get github.com/ttys3/gojieba-bleve
 import it like this to register the `gojieba` Tokenizer and Analyzer
 
 ```go
-_ "github.com/ttys3/gojieba-bleve"
+_ "github.com/ttys3/gojieba-bleve/v2"
 ```
 
 please see [bleve_test.go](bleve_test.go)
