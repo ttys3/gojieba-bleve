@@ -24,7 +24,7 @@ func (x *JiebaTokenizer) Free() {
 func (x *JiebaTokenizer) Tokenize(sentence []byte) analysis.TokenStream {
 	result := make(analysis.TokenStream, 0)
 	pos := 1
-	words := x.handle.Tokenize(string(sentence), gojieba.SearchMode, false)
+	words := x.handle.Tokenize(string(sentence), gojieba.SearchMode, true)
 	for _, word := range words {
 		token := analysis.Token{
 			Term:     []byte(word.Str),
