@@ -89,7 +89,7 @@ func Example() {
 	}
 
 	// cleanup cgo allocated heap memory
-	if jieba, ok := (index.Mapping().AnalyzerNamed("gojieba").Tokenizer).(*JiebaTokenizer); !ok {
+	if jieba, ok := (index.Mapping().AnalyzerNamed("gojieba")).(*JiebaAnalyzer); !ok {
 		panic("jieba.Free() failed")
 	} else {
 		jieba.Free()

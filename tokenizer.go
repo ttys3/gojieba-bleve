@@ -12,6 +12,8 @@ type JiebaTokenizer struct {
 	handle *gojieba.Jieba
 }
 
+var _ analysis.Tokenizer = &JiebaTokenizer{}
+
 func NewJiebaTokenizer(dictpath, hmmpath, userdictpath, idf, stop_words string) *JiebaTokenizer {
 	x := gojieba.NewJieba(dictpath, hmmpath, userdictpath, idf, stop_words)
 	return &JiebaTokenizer{x}
@@ -21,6 +23,7 @@ func (x *JiebaTokenizer) Free() {
 	x.handle.Free()
 }
 
+// Analyze([]byte) TokenStream
 func (x *JiebaTokenizer) Tokenize(sentence []byte) analysis.TokenStream {
 	result := make(analysis.TokenStream, 0)
 	pos := 1
