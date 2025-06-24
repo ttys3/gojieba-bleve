@@ -6,7 +6,7 @@ replace gopkg.in/yaml.v2 => gopkg.in/yaml.v2 v2.2.8
 
 require (
 	github.com/blevesearch/bleve/v2 v2.5.2
-	github.com/yanyiwu/gojieba v1.4.5
+	github.com/yanyiwu/gojieba v1.4.6
 )
 
 require (
